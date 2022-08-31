@@ -24,7 +24,10 @@ Consiste en:
 No pude usar YARA como extension de python, si bien indague en foros e incluso publique en el grupo oficial de YARA este problema no obtuve resolucion "https://groups.google.com/g/yara-project/c/gRWRGCSuwAo" como menciono en ese mensaje, incluso solicite ayuda en diferentes grupos de programadores, pero no obtuve respuesta debido a la baja frecuencia con la que yara es usada entre developer´s que conozco.
 
 Si bien coloque el codigo como comentado dentro de main.py, quisiera agregar cosas:
+
 -La compilacion y el salvaguardado de la regla deberian ocurrir cuando la regla se genera en el endpoint Create Rule, y guardarse en el buffer usando IO.
+
 -En ambos Analyzer´s debe usarse las reglas guardadas en el buffer, no compilarse nuevamente, para esto se usara "x=yara.load(file="")" y se procedera como es habitue segun dicta la documentacion oficial de Yara.
+
 -Yara puede analizar strings de texto, por eso se pasa como string dentro del buffer.
 
