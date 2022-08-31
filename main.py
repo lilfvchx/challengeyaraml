@@ -57,6 +57,6 @@ class Stringtoanalyze(BaseModel):
     # f=io.StringIO(rules)
     # rules=yara.load(file=f) 
     # matches=rules.match(data=strings.text)
-    # return matches
+
 ##no pude completarlo :C, no logre entender el funcionamiento de la extension yara para python, aunque haya leido la documentacion y preguntado en foros o en discord
 
